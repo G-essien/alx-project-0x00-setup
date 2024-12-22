@@ -1,4 +1,6 @@
-import { UserProps } from "@/interfaces";
+
+
+import { UserProps } from "@/interfaces"; 
 
 const UserCard: React.FC<UserProps> = ({
   id,
@@ -19,8 +21,8 @@ const UserCard: React.FC<UserProps> = ({
       <p className="text-gray-600">{email}</p>
       <p className="text-gray-600">{phone}</p>
       <p className="text-gray-600">{website}</p>
-      <p className="text-gray-600">{company.name}</p>
-      <p className="text-gray-600">{company.catchPhrase}</p>
+      <p className="text-gray-600">{company ? company.name : 'N/A'}</p>
+      <p className="text-gray-600">{company ? company.catchPhrase : 'N/A'}</p>
     </div>
   );
 };
