@@ -11,3 +11,7 @@ const Home: React.FC = () => {
 
 export default Home;
 
+// interfaces/index.ts
+export interface PillProps {
+  title: string;
+}
